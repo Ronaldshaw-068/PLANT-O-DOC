@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/obj_detection_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="7dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="7dp">
+
+        <com.huawei.hiai.modelcreatorsdk.singleobjectdetection.views.MarkImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/test" />
+
+        <TextView
+            android:layout_margin="8dp"
+            android:id="@+id/result_inf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Egyptian cat - 55.3967%"
+            android:textColor="#202020"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:id="@+id/tv_otherResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/holo_purple"
+            android:typeface="serif" />
+
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

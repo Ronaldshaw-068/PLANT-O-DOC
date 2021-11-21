@@ -1,0 +1,2 @@
+rootProject.name = 'PlantoDoc'
+include ':app'
